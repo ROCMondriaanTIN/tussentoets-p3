@@ -7,13 +7,6 @@ console.log("App is running...");
 // Opdracht 3
 
 // Opdracht 4
-
-// Opdracht 5
-
-
-
-
-
 const data = `
     [
         {
@@ -33,3 +26,26 @@ const data = `
         }
     ]
 `;
+
+// Opdracht 5
+
+// In de container komen de cards in te staan
+const container = document.querySelector(".row");
+
+// Deze functie maakt card html aan, maar moet
+// nog aangepast worden om object informatie over te nemen
+function createCard(object) {
+	const card = `
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Zet hier je title</h5>
+                <p class="card-text">Zet hier je beschrijving</p>
+                <span><strong>Zet hier je prijs</strong></span>
+            </div>
+        </div>
+    </div>
+    `;
+
+	return card;
+}
